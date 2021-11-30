@@ -88,8 +88,8 @@ public class Electronics extends TestBase {
         Thread.sleep(1000);
         checkOut.setclickon2ndDayAirShippingAndContinue();
         checkOut.selectCreditCardOption();
-        Thread.sleep(1000);
-        checkOut.fillCreditCardDetails();
+        Thread.sleep(2000);
+       checkOut.fillVisaCreditCardDetails();
         String expectedMsg12 = "Credit Card";
         String actualMsg12 = checkOut.setVerifyCreditCardPayment();
         Assert.assertEquals(expectedMsg12, actualMsg12, "Payment method is not card");

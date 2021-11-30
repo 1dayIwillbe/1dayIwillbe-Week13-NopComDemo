@@ -46,7 +46,7 @@ By verify2ndDayAir = By.xpath("//span[normalize-space()='2nd Day Air']");
     public void basicFormFillUp(){
         doubleClickAndSendKeysOnElement(inputFirstName,"George");
         doubleClickAndSendKeysOnElement(inputLastName,"Smith");
-        doubleClickAndSendKeysOnElement(inputEMailAddress,"GeoSmit123"+now.getSecond()+"@gmail.com");
+        doubleClickAndSendKeysOnElement(inputEMailAddress,"GeoSmit12"+now.getSecond()+"@gmail.com");
         doubleClickAndSendKeysOnElement(inputCompanyName,"GSMith & Co.");
         selectByValueFromDropDown(inputCountyName,"133");
         clickOnElement(inputStateName);
@@ -105,12 +105,12 @@ By verify2ndDayAir = By.xpath("//span[normalize-space()='2nd Day Air']");
             clickOnElement(clickOnContinueButton);}
 
     public void fillVisaCreditCardDetails() throws InterruptedException {
-        selectByValueFromDropDown(creditCardDropDownList,"Visa");
-        singleClickAndSendKeysOnElement(cardHolderName,"George Smith");
-        singleClickAndSendKeysOnElement(cardHolderNumber,"4658 5987 2846 6012");
+        selectByValueFromDropDown(creditCardDropDownList,"visa");
+        doubleClickAndSendKeysOnElement(cardHolderName,"George Smith");
+        doubleClickAndSendKeysOnElement(cardHolderNumber,"4658 5987 2846 6012");
         selectByValueFromDropDown(cardHolderExpMonthDropDown,"7");
         selectByValueFromDropDown(cardHolderExpYearDropDown,"2025");
-        singleClickAndSendKeysOnElement(cardHolderCVVCode,"368");
+        doubleClickAndSendKeysOnElement(cardHolderCVVCode,"368");
         clickOnElement(confirmCreditCardButton);
     }
     public void basicFormWithoutEmail(){
